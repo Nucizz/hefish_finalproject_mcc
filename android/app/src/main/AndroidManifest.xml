@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hefish_finalproject">
    <application
-        android:label="hefish_finalproject"
+        android:label="HE Fish"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
