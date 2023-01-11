@@ -35,22 +35,25 @@ class _FishDetailPageState extends State<FishDetailPage> {
         activeIcon: Icons.close,
         backgroundColor: Palette.accent,
         activeBackgroundColor: Palette.grey,
+        foregroundColor: Palette.white,
         visible: widget.user.id == widget.item.authorId,
         closeManually: false,
         curve: Curves.bounceIn,
-        overlayColor: Colors.black,
+        overlayColor: Colors.transparent,
         overlayOpacity: 0.5,
         shape: const CircleBorder(),
         children: [
           SpeedDialChild(
             child: const Icon(Icons.delete_forever_rounded),
             backgroundColor: Palette.error,
+            foregroundColor: Palette.white,
             elevation: 0,
             onTap: () => print('Delete Tapped'),
           ),
           SpeedDialChild(
             child: const Icon(Icons.edit_rounded),
             backgroundColor: Palette.accent,
+            foregroundColor: Palette.white,
             elevation: 0,
             onTap: () {
               Navigator.of(context).push(AnimatedPageRoute(
